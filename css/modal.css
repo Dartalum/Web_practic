@@ -1,0 +1,128 @@
+.vmodal {}
+
+.body{
+   background-color: #272537;
+   font-family: 'Courier New', Courier, monospace;
+   margin: 0 auto;
+   width: 757px;
+
+}
+.main-blok {
+    
+}
+.img {
+    border-radius: 35px;
+    
+}
+
+.vmodal.open .modal-overlay,
+.vmodal.open .modal-window{
+    opacity: 1;
+    z-index: 1000;
+}
+.modal-window, .modal-overlay{
+    opacity: 1;
+    z-index: 1000;
+}
+
+.vmodal.hide .modal-overlay,
+.vmodal.hide .modal-window{
+    opacity: 1;
+    z-index: 1000;
+}
+
+.vmodal.open .modal-window {
+    transform: translateY(200px);
+}
+
+.vmodal.hide .modal-window{
+    transform: translateY(-200px);
+}
+
+.vmodal.hide .modal-overlay{
+    background: rgba(0, 0, 0, 0);
+}
+
+
+
+.modal-window, .modal-overlay{
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.555);
+    transition: background .2s ease-in;
+
+}
+
+.modal-window{
+    width: 600px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 0 auto;
+    transform: translateY(-300px);
+    transition: transform .2s ease-in;
+
+}
+
+.modal-header{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+
+}
+
+.modal-title{
+    font-size: 1.5rem;
+}
+
+.modal-close{
+    cursor: pointer;
+    background-color: #000000e7;
+    border: none;
+    color: white;
+    padding: 4px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.modal-footer{
+    padding: 5px 10px;
+    border-top: 1px solid #eee;
+}
+
+.vmodal.open .button-ok{
+    background-color: #000000e7;
+    border: none;
+    color: white;
+    padding: 1px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.vmodal.open .button-cansel{
+    background-color: #000000e7;
+    border: none;
+    color: white;
+    padding: 1px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+.vmodal.open .modal-body-text{
+    font-size: 1.5rem;
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+}
